@@ -2,13 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
 header {
   width: 100%;
 }
@@ -97,29 +90,6 @@ header .banner-container .banner-img .banner-picture {
   top: 20dvh;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 2dvh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .banner-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .banner-container .banner-text {
-    display: flex;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main-title {
-    margin: 2dvh 2dvh !important;
-  }
-}
 main .hero {
   display: flex;
   flex-direction: column;
@@ -287,4 +257,78 @@ footer .footer-btn .request-btn {
 }
 footer .footer-btn .request-btn:hover {
   background-color: hsl(136, 65%, 51%);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-container .banner-text {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    margin: 2dvh 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-picture {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-title {
+    margin-left: 2dvh !important;
+  }
+  .hero-text {
+    margin-left: 2dvh !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-grid,
+  .new-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .card {
+    margin-left: 2dvh !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-btn {
+    display: flex;
+  }
+  .request-btn {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=responsivity.css.map */

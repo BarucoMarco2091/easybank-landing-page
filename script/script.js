@@ -19,21 +19,21 @@ const data = [
         'title': 'Open API',
         'text': 'Manage your savings, investments,<br>pension, and much more from one<br>account. Tracking your money has<br>never been easier.'
     },
-]
+];
 
 const newGrid = document.querySelector('.card-grid');
 data.forEach((item) => {
     const cardGrid = document.createElement('div');
-    cardGrid.className = 'card-grid';
+    cardGrid.className = 'new-card-grid';
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = 
     `
-        <img src="${item.image}" alt="">
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
+        <img class="card-image" src="${item.image}" alt="">
+        <h3 class="card-title">${item.title}</h3>
+        <p class="card-paragraph">${item.text}</p>
     `
 
-    newGrid.appendChild(cardGrid)
+    newGrid.appendChild(cardGrid);
     cardGrid.appendChild(card);
 });

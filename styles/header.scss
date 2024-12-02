@@ -1,1 +1,105 @@
 @import '../styles/variables.scss';
+
+header {
+    width: 100%;
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3dvh;
+        margin-bottom: 3dvh;
+
+        .nav-list {
+            display: flex;
+            gap: 4dvh;
+
+            .nav-link {
+                list-style-type: none;
+
+                a {
+                    font-family: 'Public Sans', serif;
+                    font-size: 1rem;
+                    color: $grayishBlue;
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    color: $limeGreen;
+                }
+            }
+        }
+
+        .nav-button {
+            display: flex;
+
+            .request-btn {
+                border: none;
+                border-radius: 4dvh;
+                width: 25dvh;
+                height: 7dvh;
+                cursor: pointer;
+                font-family: 'Public Sans', serif;
+                font-size: 1rem;
+                color: $lightGrayishBlue;
+                background: linear-gradient(90deg, $limeGreen, $brightCyan);
+            }
+
+            .request-btn:hover {
+                background-color: $limeGreen;
+            }
+        }
+    }
+
+    .banner-container {
+        display: flex;
+        background-color: $lightGrayishBlue;
+
+        .banner-text {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .main-title {
+                font-family: 'Public Sans', serif;
+                font-size: 3.5rem;
+                margin-top: 25dvh;
+                margin-bottom: 10dvh;
+                text-align: center;
+                color: $darkBlue;
+            }
+
+            .banner-paragraph {
+                font-family: 'Public Sans', serif;
+                font-size: 1.1rem;
+                text-align: center;
+                color: $grayishBlue;
+                margin-bottom: 8dvh;
+            }
+
+            .banner-btn {
+                cursor: pointer;
+                border: none;
+                border-radius: 4dvh;
+                background: linear-gradient(90deg, $limeGreen, $brightCyan);
+                width: 25dvh;
+                height: 7dvh;
+                margin: 0 auto;
+                font-family: 'Public Sans', serif;
+                font-size: 1rem;
+            }
+        }
+
+        .banner-img {
+            flex: 1;
+            background: url('../assets/bg-intro-desktop.svg');
+
+            .banner-picture {
+                max-width: 100%;
+                height: auto;
+                position: relative;
+                top: 20dvh;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,84 @@
+@import '../styles/variables.scss';
+
+footer {
+    background-color: $darkBlue;
+    display: flex;
+    justify-content: space-between;
+    height: 20dvh;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5dvh;
+
+        .icon-footer {
+            display: flex;
+            flex-direction: row;
+            margin-top: 8dvh;
+
+            .icon {
+                width: 2dvh;
+                height: 2dvh;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            .icon:hover {
+                color: $limeGreen;
+            }
+        }
+    }
+
+    .first-links {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            cursor: pointer;
+            font-family: 'Public Sans', serif;
+            font-size: 1rem;
+            color: $white;
+        }
+
+        p:hover {
+            color: $limeGreen;
+        }
+    }
+
+    .second-links {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            cursor: pointer;
+            font-family: 'Public Sans', serif;
+            font-size: 1rem;
+            color: $white;
+        }
+
+        p:hover {
+            color: $limeGreen;
+        }
+    }
+
+    .footer-btn {
+        
+        .request-btn {
+            border: none;
+            border-radius: 4dvh;
+            width: 20dvh;
+            height: 5dvh;
+            cursor: pointer;
+            font-family: 'Public Sans', serif;
+            font-size: 1rem;
+            color: $lightGrayishBlue;
+            background: linear-gradient(90deg, $limeGreen, $brightCyan);
+            margin-top: 3dvh;
+            margin-right: 5dvh;
+        }
+
+        .request-btn:hover {
+            background-color: $limeGreen;
+        }
+    }
+}

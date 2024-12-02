@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+main .hero {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(220, 16%, 96%);
+}
+main .hero .hero-title {
+  margin-top: 7dvh;
+  margin-bottom: 5dvh;
+  margin-left: 20dvh;
+  font-family: "Public Sans", serif;
+  font-size: 3rem;
+  color: hsl(233, 26%, 24%);
+}
+main .hero .hero-text {
+  margin-left: 20dvh;
+  margin-bottom: 10dvh;
+  font-family: "Public Sans", serif;
+  font-size: 1.1rem;
+  color: hsl(233, 8%, 62%);
+}
+main .hero .card-grid,
+main .hero .new-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .hero .card-grid .card,
+main .hero .new-card-grid .card {
+  margin-left: 17dvh;
+  width: 35dvh;
+}
+main .hero .card-grid .card .card-image,
+main .hero .new-card-grid .card .card-image {
+  margin-bottom: 5dvh;
+  max-width: 100%;
+  height: auto;
+}
+main .hero .card-grid .card .card-title,
+main .hero .new-card-grid .card .card-title {
+  font-family: "Public Sans", serif;
+  font-size: 1.5rem;
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 5dvh;
+}
+main .hero .card-grid .card .card-paragraph,
+main .hero .new-card-grid .card .card-paragraph {
+  font-family: "Public Sans", serif;
+  font-size: 1rem;
+  color: hsl(233, 8%, 62%);
+  text-align: center;
+  margin-bottom: 10dvh;
+}
+main .articles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15dvh;
+}
+main .articles .article-title {
+  margin-left: 17dvh;
+  margin-bottom: 8dvh;
+  font-family: "Public Sans", sans-serif;
+  font-size: 3rem;
+  color: hsl(233, 26%, 24%);
+}
+main .articles .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .articles .grid-container .card-articles {
+  margin-left: 5dvh;
+  margin-right: 5dvh;
+  gap: 3dvh;
+}
+main .articles .grid-container .card-articles .card-image img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .articles .grid-container .card-articles .card-content {
+  margin-top: 5dvh;
+}
+main .articles .grid-container .card-articles .card-content p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.8rem;
+  color: hsl(233, 8%, 62%);
+}
+main .articles .grid-container .card-articles .card-content .card-article-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 3dvh;
+  color: hsl(233, 26%, 24%);
+}
+main .articles .grid-container .card-articles .card-content .card-article-paragraph {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 3dvh;
+  margin-bottom: 7dvh;
+}/*# sourceMappingURL=main.css.map */

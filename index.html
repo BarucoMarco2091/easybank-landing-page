@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/styles.scss">
-    <link rel="stylesheet" href="styles/variables.scss">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/responsivity.css">
     <title>Easybank - Landing Page</title>
 </head>
 
@@ -16,25 +20,25 @@
             <div class="logo">
                 <img src="assets/logo.svg" alt="logo">
             </div>
-            <ul>
-                <li>
+            <ul class="nav-list">
+                <li class="nav-link">
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="#">Contact</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="#">Careers</a>
                 </li>
             </ul>
             <div class="nav-button">
-                <button>Request Invite</button>
+                <button class="request-btn">Request Invite</button>
             </div>
         </nav>
         <section class="banner-container">
@@ -45,15 +49,14 @@
                 <button class="banner-btn">Request Invite</button>
             </section>
             <section class="banner-img">
-                <img src="assets/image-mockups.png" alt="">
+                <img class="banner-picture" src="assets/image-mockups.png" alt="image-mockups">
             </section>
         </section>
     </header>
     <main>
         <section class="hero">
             <h2 class="hero-title">Why choose Easybank?</h2>
-            <p class="hero-text">We leverage Open Banking to turn your bank account into your financial hub.<br>Control
-                your finances like never before.</p>
+            <p class="hero-text">We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before.</p>
             <section class="card-grid">
 
             </section>
@@ -61,45 +64,45 @@
         <section class="articles">
             <h4 class="article-title">Latest Articles</h4>
             <section class="grid-container">
-                <section class="card">
+                <section class="card-articles">
                     <section class="card-image">
-                        <img src="assets/image-currency.jpg" alt="">
+                        <img src="assets/image-restaurant.jpg" alt="">
                     </section>
                     <section class="card-content">
                         <p>By Claire Robinson</p>
-                        <h5>Receive money in any currency with no fees</h5>
-                        <p>The world is getting smaller and<br>we’re becoming more mobile. So<br>why should you be
-                            forced to only<br>receive money in a single </p>
+                        <h5 class="card-article-title">Receive money in any currency with no fees</h5>
+                        <p class="card-article-paragraph">The world is getting smaller and<br>we’re becoming more
+                            mobile. So<br>why should you be forced to only<br>receive money in a single ...</p>
                     </section>
                 </section>
-                <section class="card">
+                <section class="card-articles">
                     <section class="card-image">
                         <img src="assets/image-restaurant.jpg" alt="">
                     </section>
                     <section class="card-content">
                         <p>By Wilson Hutton </p>
-                        <h5>Treat yourself without worrying about money</h5>
-                        <p>Our simple budgeting feature<br>allows you to separate out your<br>spending and set realistic limits<br>each month. That means you …</p>
+                        <h5 class="card-article-title">Treat yourself without worrying about money</h5>
+                        <p class="card-article-paragraph">Our simple budgeting feature<br>allows you to separate out your<br>spending and set realistic limits<br>each month. That means you …</p>
                     </section>
                 </section>
-                <section class="card">
+                <section class="card-articles">
                     <section class="card-image">
                         <img src="assets/image-plane.jpg" alt="">
                     </section>
                     <section class="card-content">
                         <p>By Wilson Hutton</p>
-                        <h5>Take your Easybank card wherever you go</h5>
-                        <p>We want you to enjoy your travels.<br>This is why we don’t charge any<br>fees on purchases while you’re<br>abroad. We’ll even show you … </p>
+                        <h5 class="card-article-title">Take your Easybank card wherever you go</h5>
+                        <p class="card-article-paragraph">We want you to enjoy your travels.<br>This is why we don’t charge any<br>fees on purchases while you’re<br>abroad. We’ll even show you … </p>
                     </section>
                 </section>
-                <section class="card">
+                <section class="card-articles">
                     <section class="card-image">
                         <img src="assets/image-confetti.jpg" alt="">
                     </section>
                     <section class="card-content">
                         <p>By Claire Robinson</p>
-                        <h5>Our invite-only Beta accounts are now live</h5>
-                        <p>After a lot of hard work by the<br>whole team, we’re excited to launch<br>our closed beta. It’s easy to request<br>an invite through the site ...</p>
+                        <h5 class="card-article-title">Our invite-only Beta accounts are now live</h5>
+                        <p class="card-article-paragraph">After a lot of hard work by the<br>whole team, we’re excited to launch<br>our closed beta. It’s easy to request<br>an invite through the site ...</p>
                     </section>
                 </section>
             </section>
@@ -107,12 +110,14 @@
     </main>
     <footer>
         <footer class="footer-container">
-            <img src="assets/logo.svg" alt="">
-            <img src="assets/icon-facebook.svg" alt="">
-            <img src="assets/icon-youtube.svg" alt="">
-            <img src="assets/icon-twitter.svg" alt="">
-            <img src="assets/icon-pinterest.svg" alt="">
-            <img src="assets/icon-instagram.svg" alt="">
+            <img class="icon" src="assets/logo.svg" alt="logo">
+            <footer class="icon-footer">
+                <img class="icon" src="assets/icon-facebook.svg" alt="icon-facebook">
+                <img class="icon" src="assets/icon-youtube.svg" alt="icon-youtube">
+                <img class="icon" src="assets/icon-twitter.svg" alt="icon-twitter">
+                <img class="icon" src="assets/icon-pinterest.svg" alt="icon-pinterest">
+                <img class="icon" src="assets/icon-instagram.svg" alt="icon-instagram">
+            </footer>
         </footer>
         <footer class="first-links">
             <p>About</p>
@@ -125,7 +130,7 @@
             <p>Privacy Policy</p>
         </footer>
         <footer class="footer-btn">
-            <button>Request Invite</button>
+            <button class="request-btn">Request Invite</button>
         </footer>
     </footer>
     <script src="script/script.js"></script>
